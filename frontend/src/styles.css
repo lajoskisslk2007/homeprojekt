@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: white;
+}
+
+a {
+  color: #245c9b;
+}
+
+.kutya-cica {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cica {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.ez-az-amaz {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222;
+}
+
+.ez-az-amaz span {
+  color: green;
+}
+
+.cica nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.cica nav a,
+.kijelentkezo-gomb {
+  font-size: 14px;
+}
+
+.kijelentkezo-gomb {
+  border: 0;
+  background: none;
+  color: #245c9b;
+  cursor: pointer;
+}
+
+.belepo-gomb {
+  border: 1px solid #aaa;
+  padding: 7px 10px;
+}
+
+.ajjaj {
+  color: darkred;
+  font-size: 12px;
+}
+
+.tartalom {
+  flex: 1;
+}
+
+.nagy-doboz,
+.adatlap {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.nagy-doboz h1 {
+  font-size: 40px;
+}
+
+.szoveg-doboz,
+.bevezeto,
+.profil-szoveg {
+  max-width: 550px;
+  line-height: 1.5;
+}
+
+.kis-szoveg {
+  color: #555;
+}
+
+.gombocska {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #777;
+  background: #eee;
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.zold-gomb {
+  background: #ddd;
+}
+
+.gombocska:disabled {
+  opacity: 0.6;
+}
+
+.megjegyzes {
+  margin-top: 20px;
+  color: #555;
+}
+
+.potty {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: green;
+}
+
+.form-oldal {
+  width: min(440px, calc(100% - 30px));
+  margin: 45px auto;
+}
+
+.kartya {
+  padding: 24px;
+  border: 1px solid #bbb;
+}
+
+.kartya h1,
+.adatlap h1 {
+  font-size: 30px;
+}
+
+.kartya form {
+  display: flex;
+  flex-direction: column;
+}
+
+.kartya label {
+  margin: 12px 0 5px;
+}
+
+.kartya input {
+  height: 38px;
+  padding: 6px;
+  border: 1px solid #999;
+}
+
+.nagy-gomb {
+  margin-top: 18px;
+}
+
+.masik-link {
+  margin-top: 20px;
+}
+
+.hiba-szoveg {
+  color: #9b111e;
+}
+
+.jo-uzi {
+  color: #27632a;
+}
+
+.varakozas {
+  margin: 50px;
+}
+
+.adat-kartya {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 20px;
+  border: 1px solid #bbb;
+}
+
+.kor {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.kis-cim {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.labresz {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 30px;
+  border-top: 1px solid #ccc;
+  color: #555;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .cica {
+    padding: 15px;
+  }
+
+  .cica nav {
+    gap: 9px;
+  }
+
+  .cica nav a,
+  .kijelentkezo-gomb {
+    font-size: 12px;
+  }
+
+  .nagy-doboz h1 {
+    font-size: 32px;
+  }
+
+  .adat-kartya {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .labresz {
+    gap: 8px;
+    flex-direction: column;
+    padding: 15px;
+  }
+}
